@@ -10,7 +10,7 @@ morgan = require("morgan");
 server.use(express.json());
 server.use(cors());
 server.use(morgan("dev"));
-server.set('port', 20000);
+server.set('port', 15000);
 server.set('views',path.join(__dirname, 'views'));
 server.set('view engine', 'html');
 

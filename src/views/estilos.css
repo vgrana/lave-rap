@@ -21,7 +21,7 @@ background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, F
   background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-<!-- 
+ 
      * {box-sizing: border-box}
     body {font-family: Verdana, sans-serif; margin:0} 
     .mySlides {display: none}
@@ -140,4 +140,4 @@ background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, F
   box-sizing: border-box;
   position: relative;
   } 
- -->
+
