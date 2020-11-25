@@ -26,4 +26,12 @@ router.get('/estilos', (req,res) =>{
     res.sendFile(path.join(__dirname ,'../views/estilos.css'));
     
 });
+router.get('/face', (req,res) =>{
+    res.sendFile(path.join(__dirname ,'../views/face.jpg'));
+    
+});
+router.get('/instagram', (req,res) =>{
+    res.sendFile(path.join(__dirname ,'../views/instagram.jpg'));
+    
+});
 module.exports = router;
