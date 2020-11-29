@@ -10,8 +10,9 @@ morgan = require("morgan");
 server.use(express.json());
 server.use(cors());
 server.use(morgan("dev"));
+server.use(express.static(path.join(__dirname, 'public')));
 server.set('port', 15000);
-server.use(express.static(path.join(__dirname, 'static')));
+
 server.set('view engine', 'html');
 
 //routes
@@ -22,31 +23,31 @@ server.get('/', (req,res) =>{
 });
 
 server.get('/img1', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'img1.jpg'));
+    res.sendFile(path.join(__dirname ,'/public/img1.jpg'));
     
     
 });
-server.get('/img2', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'img2.jpg'));
+// server.get('/img2', (req,res) =>{
+//     res.sendFile(path.join(__dirname ,'img2.jpg'));
     
-});
-server.get('/img3', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'img3.jpg'));
+// });
+// server.get('/img3', (req,res) =>{
+//     res.sendFile(path.join(__dirname ,'img3.jpg'));
     
-});
-server.get('/img4', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'img4.jpg'));
+// });
+// server.get('/img4', (req,res) =>{
+//     res.sendFile(path.join(__dirname ,'img4.jpg'));
     
-});
+// });
 
-server.get('/face', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'face.jpg'));
+// server.get('/face', (req,res) =>{
+//     res.sendFile(path.join(__dirname ,'face.jpg'));
     
-});
-server.get('/instagram', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'instagram.jpg'));
+// });
+// server.get('/instagram', (req,res) =>{
+//     res.sendFile(path.join(__dirname ,'instagram.jpg'));
     
-});
+// });
 
 server.listen(server.get('port'), () => {
     console.log("Server running on port",server.get('port'));
