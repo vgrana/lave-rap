@@ -11,7 +11,7 @@ server.use(express.json());
 server.use(cors());
 server.use(morgan("dev"));
 server.set('port', 15000);
-server.set('views',path.join(__dirname, 'images'));
+server.set('images',path.join(__dirname, 'images'));
 server.set('view engine', 'html');
 
 //routes
