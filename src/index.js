@@ -11,7 +11,7 @@ server.use(express.json());
 server.use(cors());
 server.use(morgan("dev"));
 server.set('port', 15000);
-server.set('static',path.join(__dirname, 'static'));
+server.use(express.static(path.join(__dirname, 'static')));
 server.set('view engine', 'html');
 
 //routes
@@ -22,29 +22,29 @@ server.get('/', (req,res) =>{
 });
 
 server.get('/img1', (req,res) =>{
-    // res.sendFile(path.join(__dirname ,'../static/img1.jpg'));
-    res.send("holisisis")
+    res.sendFile(path.join(__dirname ,'./static/img1.jpg'));
+    
     
 });
 server.get('/img2', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'../static/img2.jpg'));
+    res.sendFile(path.join(__dirname ,'./static/img2.jpg'));
     
 });
 server.get('/img3', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'../static/img3.jpg'));
+    res.sendFile(path.join(__dirname ,'./static/img3.jpg'));
     
 });
 server.get('/img4', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'../static/img4.jpg'));
+    res.sendFile(path.join(__dirname ,'./static/img4.jpg'));
     
 });
 
 server.get('/face', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'../static/face.jpg'));
+    res.sendFile(path.join(__dirname ,'./static/face.jpg'));
     
 });
 server.get('/instagram', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'../static/instagram.jpg'));
+    res.sendFile(path.join(__dirname ,'./static/instagram.jpg'));
     
 });
 
