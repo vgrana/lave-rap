@@ -23,7 +23,7 @@ server.get('/', (req,res) =>{
 });
 
 server.get('/img1', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'/public/img1.jpg'));
+    res.sendFile(path.join(__dirname ,'img1.jpg'));
     
     
 });
