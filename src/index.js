@@ -20,8 +20,10 @@ server.get('/', (req,res) =>{
     res.sendFile(path.join(__dirname , 'index.html'));
     
 });
+
 server.get('/img1', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'../static/img1.jpg'));
+    // res.sendFile(path.join(__dirname ,'../static/img1.jpg'));
+    res.send("holisisis")
     
 });
 server.get('/img2', (req,res) =>{
