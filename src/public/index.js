@@ -22,12 +22,12 @@ server.get('/', (req,res) =>{
     
 });
 
-server.get('/public/img1', (req,res) =>{
+server.get('/img1', (req,res) =>{
     res.sendFile(path.join(__dirname ,'img1.jpg'));
     
     
 });
-server.get('/public/img2', (req,res) =>{
+server.get('/img2', (req,res) =>{
     res.sendFile(path.join(__dirname ,'img2.jpg'));
     
 });
