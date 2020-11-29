@@ -21,28 +21,28 @@ server.get('/', (req,res) =>{
     
 });
 server.get('/img1', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'/public/img1.jpg'));
+    res.sendFile(path.join(__dirname ,'../public/img1.jpg'));
     
 });
 server.get('/img2', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'/public/img2.jpg'));
+    res.sendFile(path.join(__dirname ,'../public/img2.jpg'));
     
 });
 server.get('/img3', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'/public/img3.jpg'));
+    res.sendFile(path.join(__dirname ,'../public/img3.jpg'));
     
 });
 server.get('/img4', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'/public/img4.jpg'));
+    res.sendFile(path.join(__dirname ,'../public/img4.jpg'));
     
 });
 
 server.get('/face', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'/public/face.jpg'));
+    res.sendFile(path.join(__dirname ,'../public/face.jpg'));
     
 });
 server.get('/instagram', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'/public/instagram.jpg'));
+    res.sendFile(path.join(__dirname ,'../public/instagram.jpg'));
     
 });
 
