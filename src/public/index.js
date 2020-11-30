@@ -22,15 +22,15 @@ server.get('/', (req,res) =>{
     
 });
 
-server.get('/img1', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'img1.jpg'));
+// server.get('/img1', (req,res) =>{
+//     res.sendFile(path.join(__dirname ,'img1.jpg'));
     
     
-});
-server.get('/img2', (req,res) =>{
-    res.sendFile(path.join(__dirname ,'img2.jpg'));
+// });
+// server.get('/img2', (req,res) =>{
+//     res.sendFile(path.join(__dirname ,'img2.jpg'));
     
-});
+// });
 // server.get('/img3', (req,res) =>{
 //     res.sendFile(path.join(__dirname ,'img3.jpg'));
     
